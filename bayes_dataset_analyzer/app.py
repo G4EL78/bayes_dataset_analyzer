@@ -16,8 +16,8 @@ Esta aplicación utiliza **probabilidad condicional y el Teorema de Bayes** impl
 para predecir si una película obtendrá una **Calificación Alta (>8.0/10)** basándose en su género, presupuesto y tipo de lanzamiento.
 """)
 
-# Cargar datos
-ruta_csv = "peliculas.csv"
+# Cargar datos (Apuntando correctamente a la carpeta data/raw/)
+ruta_csv = "data/raw/peliculas.csv"
 if not os.path.exists(ruta_csv):
     st.error(f"No se encontró el archivo de datos en '{ruta_csv}'. Revisa la estructura de carpetas.")
     st.stop()
